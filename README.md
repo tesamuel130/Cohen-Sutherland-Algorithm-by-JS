@@ -1,5 +1,6 @@
 # Cohen-Sutherland-Algorithm-by-JS
 This repository contains a JavaScript implementation of the Cohen-Sutherland Line Clipping Algorithm, a fundamental computer graphics algorithm used for line clipping in 2D graphics. This algorithm is particularly useful for rendering scenes efficiently by determining if a line segment lies inside, outside, or partially within a specified rectangular clipping window.
+![Clipping Window Example](assets/LineClipping2.png)
 
 # Table of Contents
 - [Cohen-Sutherland-Algorithm-by-JS](#cohen-sutherland-algorithm-by-js)
