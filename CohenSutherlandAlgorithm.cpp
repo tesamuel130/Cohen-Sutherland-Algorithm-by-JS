@@ -2,7 +2,7 @@
 using namespace std;
 
 // Define the clipping window boundaries
-const int xmin = 10, ymin = 10, xmax = 30, ymax = 20;
+const int xMin = 10, yMin = 10, xMax = 30, yMax = 20;
 
 // Define region codes using bitwise positions
 const int INSIDE = 0;   // 0000
@@ -15,17 +15,17 @@ const int TOP = 8;      // 1000
 int computeOutcode(int x, int y) {
     int code = INSIDE;
 
-    if (x < xmin) code |= LEFT;
-    else if (x > xmax) code |= RIGHT;
-    if (y < ymin) code |= BOTTOM;
-    else if (y > ymax) code |= TOP;
+    if (x < xMin) code |= LEFT;
+    else if (x > xMax) code |= RIGHT;
+    if (y < yMin) code |= BOTTOM;
+    else if (y > yMax) code |= TOP;
 
     return code;
 }
 
 // Function implementing the Cohen-Sutherland algorithm
 void cohenSutherlandClip(int x1, int y1, int x2, int y2) {
-    // Compute the initial outcodes for the two endpoints
+    // Compute the initial outCodes for the two endpoints
     int outcode1 = computeOutcode(x1, y1);
     int outcode2 = computeOutcode(x2, y2);
 
@@ -46,17 +46,17 @@ void cohenSutherlandClip(int x1, int y1, int x2, int y2) {
 
             // Find the intersection point
             if (outcodeOut & TOP) { // Point is above the clipping window
-                x = x1 + (x2 - x1) * (ymax - y1) / (y2 - y1);
-                y = ymax;
+                x = x1 + (x2 - x1) * (yMax - y1) / (y2 - y1);
+                y = yMax;
             } else if (outcodeOut & BOTTOM) { // Point is below the clipping window
-                x = x1 + (x2 - x1) * (ymin - y1) / (y2 - y1);
-                y = ymin;
+                x = x1 + (x2 - x1) * (yMin - y1) / (y2 - y1);
+                y = yMin;
             } else if (outcodeOut & RIGHT) { // Point is to the right of the clipping window
-                y = y1 + (y2 - y1) * (xmax - x1) / (x2 - x1);
-                x = xmax;
+                y = y1 + (y2 - y1) * (xMax - x1) / (x2 - x1);
+                x = xMax;
             } else if (outcodeOut & LEFT) { // Point is to the left of the clipping window
-                y = y1 + (y2 - y1) * (xmin - x1) / (x2 - x1);
-                x = xmin;
+                y = y1 + (y2 - y1) * (xMin - x1) / (x2 - x1);
+                x = xMin;
             }
 
             // Update the outside point
