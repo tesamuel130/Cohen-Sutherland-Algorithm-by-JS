@@ -20,3 +20,10 @@ Each region around the window is represented by a bit:
 * 0010: Right of the window
 * 0100: Below the window
 * 1000: Above the window
+
+# Usage
+To test this implementation:
+
+1. Copy the code into a JavaScript environment (such as a browser console or Node.js).
+2. Define a clipping window by setting xmin, ymin, xmax, and ymax.
+3. Call the cohenSutherlandClip function with endpoints of the line segment to determine if it lies inside the clipping area or needs adjustment.
