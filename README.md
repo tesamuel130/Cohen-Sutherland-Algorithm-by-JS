@@ -13,3 +13,10 @@ The algorithm works as follows:
     * Trivially reject the line if both endpoints lie outside the window in the same region.
     * Calculate intersections with the clipping window if the line partially intersects it.
 
+# Region Code Bitmask
+Each region around the window is represented by a bit:
+
+* 0001: Left of the window
+* 0010: Right of the window
+* 0100: Below the window
+* 1000: Above the window
