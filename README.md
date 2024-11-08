@@ -3,3 +3,13 @@ This repository contains a JavaScript implementation of the Cohen-Sutherland Lin
 
 # Overview
 The Cohen-Sutherland algorithm is used to efficiently determine whether a line segment should be drawn within a specific region of the screen (the clipping window). If a line segment lies outside of this window, it can be ignored, saving computational resources. If it lies partially inside, the algorithm calculates where it intersects the clipping window and only displays the visible portion.
+
+# Algorithm Explanation
+The algorithm works as follows:
+
+1. Each endpoint of the line segment is assigned a 4-bit region code. Each bit represents a direction (LEFT, RIGHT, TOP, BOTTOM) in relation to the clipping window.
+2. The algorithm then uses these codes to:
+    * Trivially accept the line if both endpoints are inside the window.
+    * Trivially reject the line if both endpoints lie outside the window in the same region.
+    * Calculate intersections with the clipping window if the line partially intersects it.
+
