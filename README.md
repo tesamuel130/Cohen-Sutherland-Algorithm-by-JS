@@ -36,3 +36,16 @@ To test this implementation:
 1. Copy the code into a JavaScript environment (such as a browser console or Node.js).
 2. Define a clipping window by setting xMin, yMin, xMax, and yMax.
 3. Call the cohenSutherlandClip function with endpoints of the line segment to determine if it lies inside the clipping area or needs adjustment.
+
+
+# collaborator
+1. Abel Taye                ATE-3156-14
+2. Antnhe Debebe            ATE/3036/14
+3. Fasika Dagnachew         ATE-1989-14
+4. Mihret Girum             ATE-1607-14
+5. Nahom Tsehaye            ATE-2371-14
+6. Samuel Tesfaye           ATE-0561-14
+7. Rekik Alemayhu           ATE-2752-14
+8. Yeabsira Abera           ATE-1291-14
+9. Yeabsera Eyob            ATE-1640-14
+10. Yosef Ahmedin           ATE-2719-14
