@@ -9,6 +9,7 @@ This repository contains a JavaScript implementation of the Cohen-Sutherland Lin
 - [Algorithm Explanation](#algorithm-explanation)
 - [Region Code BitMask](#region-code-bitmask)
 - [Usage](#usage)
+- - [Collaborator](#collaborator)
 
 # Overview
 The Cohen-Sutherland algorithm is used to efficiently determine whether a line segment should be drawn within a specific region of the screen (the clipping window). If a line segment lies outside of this window, it can be ignored, saving computational resources. If it lies partially inside, the algorithm calculates where it intersects the clipping window and only displays the visible portion.
@@ -39,13 +40,13 @@ To test this implementation:
 
 
 # collaborator
-1. Abel Taye                ATE-3156-14
-2. Antnhe Debebe            ATE/3036/14
-3. Fasika Dagnachew         ATE-1989-14
-4. Mihret Girum             ATE-1607-14
-5. Nahom Tsehaye            ATE-2371-14
-6. Samuel Tesfaye           ATE-0561-14
-7. Rekik Alemayhu           ATE-2752-14
-8. Yeabsira Abera           ATE-1291-14
-9. Yeabsera Eyob            ATE-1640-14
-10. Yosef Ahmedin           ATE-2719-14
+1. Abel Taye----------------ATE-3156-14
+2. Antnhe Debebe------------ATE/3036/14
+3. Fasika Dagnachew---------ATE-1989-14
+4. Mihret Girum-------------ATE-1607-14
+5. Nahom Tsehaye------------ATE-2371-14
+6. Samuel Tesfaye-----------ATE-0561-14
+7. Rekik Alemayhu-----------ATE-2752-14
+8. Yeabsira Abera-----------ATE-1291-14
+9. Yeabsera Eyob------------ATE-1640-14
+10. Yosef Ahmedin-----------ATE-2719-14
